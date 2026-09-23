@@ -5,14 +5,30 @@ import java.util.random.RandomGenerator;
 public class Player {
 
 
-    private String fullName;
+    private String firstName;
+    private String lastName;
     private int score;
     private int dice1;
     private int dice2;
 
-    public Player(String fullName) {
-        this.fullName = fullName;
+    //skicka in firstname och lastname här istället
+
+
+    public Player(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.score = 0;
+    }
+
+    public String getFirstName() {
+        return firstName;
+
+    }
+
+    public String getlastName() {
+        return lastName;
+
+
     }
 
     public int rollDice() {
@@ -23,17 +39,20 @@ public class Player {
 
     public void showScore() {
         IO.println("poäng: " + score);
-        
+
 
     }
 
-    public void addToScore(int score) {
-        this.score += score;
+    public void addToScore(int points) {
+        this.score += points;
 
     }
 
     public String getFullName() {
-        return fullName;
+        return firstName + " " + lastName;
+
+
+        //ska returnera firstname + " " + lastname
 
     }
 
@@ -41,6 +60,9 @@ public class Player {
     public int getScore() {
         return score;
     }
+
+    //playerOne.addToScore();
+    //playerTwo.addToScore();
 
     public int getDice1() {
         return dice1;
