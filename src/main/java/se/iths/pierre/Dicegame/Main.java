@@ -39,17 +39,17 @@ public class Main {
         int dice3 = RandomGenerator.getDefault().nextInt(1, 7);
         int dice4 = RandomGenerator.getDefault().nextInt(1, 7);
         playerTwo.addToScore(dice3 + dice4);
-        // IO.println("Du fick poäng: " + score);
+        IO.println("Du fick poäng: " + playerTwo.getScore());
         String input2 = IO.readln("Player 1: Kasta ditt andra kast med tärningarna");
         int dice5 = RandomGenerator.getDefault().nextInt(1, 7);
         int dice6 = RandomGenerator.getDefault().nextInt(1, 7);
         playerOne.addToScore(dice5 + dice6);
-        //IO.println("Du fick poäng: " + score5);
+        IO.println("Du fick poäng: " + playerOne.getScore());
         String input3 = IO.readln("Player 2 Kasta ditt andra kast med tärningarn");
         int dice7 = RandomGenerator.getDefault().nextInt(1, 7);
         int dice8 = RandomGenerator.getDefault().nextInt(1, 7);
         playerTwo.addToScore(dice7 + dice8);
-        //IO.println("Du fick poäng: " + addToScore(score8)
+        IO.println("Du fick poäng: " + playerTwo.getScore());
         int score10 = dice1 + dice2 + dice5 + dice6;
         int score11 = dice3 + dice4 + dice7 + dice8;
         int totalpoäng = score10 + score11;
