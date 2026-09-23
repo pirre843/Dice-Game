@@ -45,7 +45,7 @@ public class Main {
         int dice6 = RandomGenerator.getDefault().nextInt(1, 7);
         playerOne.addToScore(dice5 + dice6);
         IO.println("Du fick poäng: " + playerOne.getScore());
-        String input3 = IO.readln("Player 2 Kasta ditt andra kast med tärningarn");
+        String input3 = IO.readln("Player 2 Kasta ditt andra kast med tärningarna");
         int dice7 = RandomGenerator.getDefault().nextInt(1, 7);
         int dice8 = RandomGenerator.getDefault().nextInt(1, 7);
         playerTwo.addToScore(dice7 + dice8);
